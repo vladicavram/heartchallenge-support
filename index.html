@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>HeartChallenge — Support</title>
+<meta name="description" content="Support and FAQ for HeartChallenge, the Apple Watch heart-rate dueling app." />
+<style>
+  :root{
+    --bg:#F5F2E9; --bg2:#EFEADD; --surface:#FFFDF8; --ink:#2B2620; --muted:#776F62;
+    --clay:#CC785C; --green:#2A8C5F; --border:rgba(90,72,40,.14);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:linear-gradient(180deg,var(--bg),var(--bg2));color:var(--ink);
+    line-height:1.6;-webkit-font-smoothing:antialiased;min-height:100vh}
+  .wrap{max-width:720px;margin:0 auto;padding:32px 20px 64px}
+  header{text-align:center;padding:24px 0 8px}
+  .logo{width:84px;height:84px;margin:0 auto 14px;display:block}
+  h1{font-family:Georgia,"Times New Roman",serif;font-size:34px;font-weight:600;letter-spacing:-.01em}
+  .tag{color:var(--muted);font-size:16px;margin-top:6px}
+  .card{background:var(--surface);border:1px solid var(--border);border-radius:20px;
+    padding:22px 24px;margin-top:20px;box-shadow:0 8px 24px rgba(80,60,30,.05)}
+  h2{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:14px}
+  .faq{border-top:1px solid var(--border);padding:16px 0}
+  .faq:first-of-type{border-top:none;padding-top:2px}
+  .q{font-weight:600;font-size:16px;margin-bottom:4px}
+  .a{color:var(--muted);font-size:15px}
+  a{color:var(--clay);text-decoration:none;font-weight:600}
+  a:hover{text-decoration:underline}
+  .contact{display:inline-block;margin-top:6px;background:var(--clay);color:#fff;
+    padding:12px 22px;border-radius:14px;font-weight:600}
+  .contact:hover{text-decoration:none;opacity:.92}
+  footer{text-align:center;color:var(--muted);font-size:13px;margin-top:34px}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <svg class="logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect width="100" height="100" rx="23" fill="#CC785C"/>
+        <path d="M50 79C25 62 14 49 14 35.5 14 26 21.5 19 30.5 19c5.6 0 11 2.7 14.3 7 .9 1.2 2.7 1.2 3.6 0C51.7 21.7 57 19 62.6 19 71.6 19 79 26 79 35.5 79 49 68 62 50 79Z" fill="#fff"/>
+        <path d="M44 38.5c0-1.5 1.7-2.5 3-1.7l13 7.8c1.3.8 1.3 2.7 0 3.5l-13 7.8c-1.3.8-3-.2-3-1.7Z" fill="#CC785C"/>
+      </svg>
+      <h1>HeartChallenge</h1>
+      <p class="tag">Heart-rate duels on your Apple Watch</p>
+    </header>
+
+    <div class="card">
+      <h2>Frequently Asked Questions</h2>
+
+      <div class="faq">
+        <div class="q">How do I challenge someone?</div>
+        <div class="a">Open HeartChallenge on your Apple Watch, set a target heart rate (BPM), a duration, and an optional wager, then enter your friend's username. They'll get a notification on their wrist.</div>
+      </div>
+
+      <div class="faq">
+        <div class="q">How long do they have to complete it?</div>
+        <div class="a">Once a challenge is accepted, your friend has 12 hours to start it, then a 15-minute window to hit the target heart rate and hold it for the set duration.</div>
+      </div>
+
+      <div class="faq">
+        <div class="q">How is the heart rate measured?</div>
+        <div class="a">Live, by the Apple Watch optical heart-rate sensor through Apple HealthKit. There's no manual entry — you have to actually earn it.</div>
+      </div>
+
+      <div class="faq">
+        <div class="q">How do wagers and settling up work?</div>
+        <div class="a">The iPhone companion app keeps a ledger of who owes whom and for which challenge. You can add your Cash App $Cashtag so friends can pay you. HeartChallenge does not process or hold any money — settlement happens directly between you and your friend in Cash App.</div>
+      </div>
+
+      <div class="faq">
+        <div class="q">My friend didn't receive a challenge.</div>
+        <div class="a">Make sure both of you are signed in to iCloud and have set up a username in the app. Challenges sync through iCloud, so a working internet connection is required on both devices.</div>
+      </div>
+
+      <div class="faq">
+        <div class="q">Do I need an Apple Watch?</div>
+        <div class="a">Yes — challenges are run on the Apple Watch using its heart-rate sensor. The iPhone app is a companion for viewing your payments ledger and managing your profile.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Privacy</h2>
+      <div class="a">HeartChallenge stores your username, age (used only to calculate your max heart rate), and challenge records in your iCloud account via Apple CloudKit. Heart-rate data is read on-device through HealthKit during a challenge and is not stored on our servers. We do not sell your data. Your Cash App $Cashtag, if you add one, is shared only with friends you have a challenge with so they can pay you.</div>
+    </div>
+
+    <div class="card" style="text-align:center">
+      <h2>Get in touch</h2>
+      <div class="a">Questions, bugs, or feedback? We usually reply within a couple of days.</div>
+      <a class="contact" href="mailto:vladavraam@gmail.com?subject=HeartChallenge%20Support">Email Support</a>
+    </div>
+
+    <footer>© 2026 HeartChallenge · Made for Apple Watch</footer>
+  </div>
+</body>
+</html>
